@@ -12,13 +12,17 @@
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
-    <br />
-    Edad <input type="number" name="age" id="age">
+  
+  <form class="formulario" id="formulario-asistentes">
+    <label for="name">Nombre</label> <!-- Se agregó la etiqueta <label> -->
+    <input type="text" name="name" id="name">
     <br />
 
-    Nacionalidad
+    <label for="age">Edad</label> <!-- Se agregó la etiqueta <label>  -->
+    <input type="number" name="age" id="age">
+    <br />
+
+    <label for="nationality">Nacionalidad</label>
     <select name="nationality" id="nationality">
       <option value="ar">Argentina</option>
       <option value="mx">Mexicana</option>
@@ -26,15 +30,17 @@
       <option value="vnzl">Venezolana</option>
     </select>
     <br />
-    <input type="submit">
+
+    
+    <input type="submit" value="Confirmar Asistencia"> <!-- Se modificó el texto del botón a "Confirmar Asistencia" para mayor claridad -->
   </form>
 
-  <div>
+  <!-- Se añadió un contenedor div para la lista de invitados -->
+  <div id="lista-invitados">  
     <h2>Lista de invitados</h2>
-
   </div>
 
-  <script src="../formulario.js"></script>
+  <script src="./formulario.js"></script>
 </body>
 
 </html>
